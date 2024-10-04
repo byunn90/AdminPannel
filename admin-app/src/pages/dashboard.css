@@ -1,0 +1,61 @@
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for cards */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Colors for each card and their hover effects */
+.red-card {
+  background-color: #ff4d4d;
+}
+
+.red-card:hover {
+  background-color: #e64545;
+}
+
+.green-card {
+  background-color: #4caf50;
+}
+
+.green-card:hover {
+  background-color: #43a047;
+}
+
+.yellow-card {
+  background-color: #ffeb3b;
+  color: #000;
+}
+
+.yellow-card:hover {
+  background-color: #ffd700;
+}
+
+.blue-card {
+  background-color: #2196f3;
+}
+
+.blue-card:hover {
+  background-color: #1e88e5;
+}

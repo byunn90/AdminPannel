@@ -1,0 +1,80 @@
+/* Container for entire app layout */
+.app-container {
+  display: flex;
+  height: 100vh;
+  font-family: "Arial", sans-serif; /* Add a standard font for consistency */
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 250px;
+  background-color: #282c34; /* Changed background color to a darker shade for better contrast */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to create separation */
+}
+
+.sidebar button {
+  margin: 10px 0;
+  padding: 12px 15px; /* Added padding for a better click area */
+  width: 100%;
+  color: #ffffff;
+  background-color: #3c4043; /* Neutral background color for buttons */
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adds space between the icon and text */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  border-radius: 5px; /* Rounded corners for a smoother look */
+}
+
+.sidebar button:hover {
+  background-color: #505357; /* Darker color for hover effect */
+  transform: translateY(-2px); /* Adds a slight lift on hover */
+}
+
+.sidebar button:focus {
+  outline: none; /* Remove the default outline */
+  box-shadow: 0 0 4px 2px #2196f3; /* Add a custom focus shadow */
+}
+
+/* Main content area styles */
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9; /* Lighter background for better readability */
+  overflow-y: auto;
+}
+
+/* Logo styles */
+.logo-container {
+  margin-bottom: 30px; /* Increased space between the logo and buttons */
+  text-align: center;
+}
+
+.logo {
+  width: 120px; /* Reduced size to fit better in the sidebar */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Scrollbar styles */
+.sidebar::-webkit-scrollbar,
+.content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb,
+.content::-webkit-scrollbar-thumb {
+  background-color: #bcbcbc;
+  border-radius: 10px;
+}
