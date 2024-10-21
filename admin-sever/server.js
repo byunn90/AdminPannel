@@ -9,3 +9,5 @@ app.get("/admin", (req, res) => {
 app.listen(port, () => {
   console.log(`Admin-server running at http://localhost:${port}`);
 });
+
+app.get("/Users", (req, res) => {});
